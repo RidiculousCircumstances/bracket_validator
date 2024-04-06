@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  php-cli:
+    image: 'php:cli'
+    volumes:
+      - ./:/var/www
+  composer:
+    image: 'composer'
+    volumes:
+      - ./:/var/www
